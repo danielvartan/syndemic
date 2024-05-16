@@ -387,7 +387,8 @@ HORIZONTAL
 @#$#@#$#@
 ## Children's Environmental Health in LDCs Model
 
-*Created by Daniel Vartanian
+> Created by [Daniel Vartanian](https://linktr.ee/danielvartan).
+> Project repository: https://github.com/danielvartan/syndemic
 
 ### Overview
 
@@ -400,15 +401,15 @@ By modeling these complex interactions using an Agent-Based Model (ABM) in NetLo
 The model includes the following key elements:
 
 - **Children**: Represented by turtle agents, each child has a health status that can be healthy, malnourished, or diseased.
-- **Clean Water Points**: Locations providing access to clean water.
-- **Health Service Points**: Locations providing access to health services.
-- **Education Points**: Locations providing access to education.
-- **Pollution Level**: A variable representing the level of pollution in the environment.
-- **Nutrition Level**: A variable representing the overall availability of nutrition in the environment.
+- **Clean water points**: Locations providing access to clean water.
+- **Health service points**: Locations providing access to health services.
+- **Education points**: Locations providing access to education.
+- **Pollution level**: A variable representing the level of pollution in the environment.
+- **Nutrition level**: A variable representing the overall availability of nutrition in the environment.
 
-### Variables and Attributes
+### Variables and attributes
 
-1. **Global Variables**:
+1. **Global variables**:
     - `total-children`: Number of child agents in the model.
     - `pollution-level`: A variable to indicate the level of pollution in the environment.
     - `clean-water-points`: Number of spots with clean water access.
@@ -416,7 +417,7 @@ The model includes the following key elements:
     - `education-points`: Number of spots with access to education.
     - `nutrition-level`: A variable indicating the availability and quality of nutrition.
 
-2. **Turtle Attributes**:
+2. **Turtle attributes**:
     - `health-status`: Health status of a child (0: healthy, 1: malnourished, 2: diseased).
     - `access-to-clean-water`: Boolean indicating access to clean water.
     - `access-to-health-services`: Boolean indicating access to health services.
@@ -426,12 +427,11 @@ The model includes the following key elements:
 
 1. **Setup**:
     - Initializes the environment with child agents, clean water points, health service points, and education points.
-    - Each child agent starts with a healthy status and no access to clean water, health services, or education.
 
 2. **Go**:
     - The `go` procedure runs each simulation tick, causing child agents to move, updating their access to resources, and changing their health status based on environmental interactions.
 
-3. **Health Dynamics**:
+3. **Health dynamics**:
     - Healthy children can become malnourished or diseased based on their access to clean water and pollution levels.
     - Malnourished children can recover if they gain access to clean water, health services, and nutrition.
     - Diseased children can reduce to malnourished status with health services and have a chance of dying.
@@ -441,8 +441,8 @@ The model includes the following key elements:
 
 - **Pollution**: High pollution levels increase the likelihood of children becoming diseased.
 - **Nutrition**: Lower nutrition availability increases the chances of children becoming malnourished.
-- **Access to Clean Water**: Crucial for preventing disease and improving recovery from malnourishment.
-- **Health Services**: Essential for treating diseased children and improving their health status.
+- **Access to clean water**: Crucial for preventing disease and improving recovery from malnourishment.
+- **Health services**: Essential for treating diseased children and improving their health status.
 - **Education**: Access to education can indirectly improve health outcomes by fostering behaviors that promote health and reducing health risks.
 
 ### How to Use the Model
@@ -459,11 +459,12 @@ The model includes the following key elements:
 - How does access to education influence the overall health outcomes of children?
 
 ### Conclusion
+
 This model provides a simulation framework to understand the complex interactions affecting children's health in LDCs. By adjusting various parameters, users can explore different scenarios and identify potential leverage points for effective interventions.
 
 ### References
 
-- Bereton, C. F. & Jagals, P. (2021). Applications of Systems Science to Understand and Manage Multiple Influences within Children’s Environmental Health in Least Developed Countries: A Causal Loop Diagram Approach. *International Journal of Environmental Research and Public Health*, 18(6), 3010.
+- Bereton, C. F. & Jagals, P. (2021). Applications of Systems Science to Understand and Manage Multiple Influences within Children’s Environmental Health in Least Developed Countries: A Causal Loop Diagram Approach. _International Journal of Environmental Research and Public Health_, _18_(6), 3010.
 @#$#@#$#@
 default
 true
